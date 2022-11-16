@@ -20,7 +20,7 @@ res = requests.post(url="https://api-XXX.xdr.sg.paloaltonetworks.com/public_api/
 # importing the module
 import re
 
-# opening and reading the file
+# Regex&Filter to get only IPv4 address format
 fstring = str(res.json())
 fstring = fstring.replace(',','\n')
 ipString=re.findall(r'(?:\d{1,3}\.)+(?:\d{1,3})',fstring)
