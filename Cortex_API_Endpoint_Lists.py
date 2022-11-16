@@ -1,5 +1,9 @@
+# Version 1.0 #
+# Pongpisit L. #
+
 import requests
 
+#Please change to your tenants API Key and ID#
 api_id='12345'
 api_key='XXXXX'
 
@@ -8,6 +12,7 @@ headers = {
     "Authorization": api_key
 }
 parameters = {}
+# Please change to match your Tenants API Url #
 res = requests.post(url="https://api-XXX.xdr.sg.paloaltonetworks.com/public_api/v1/endpoints/get_endpoints/",
                     headers=headers,
                     json=parameters)
